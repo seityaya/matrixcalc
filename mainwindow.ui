@@ -1,0 +1,2115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Матричный калькулятор</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="MatA_groupBoxViev">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>200</width>
+      <height>218</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="title">
+     <string> Матрица А</string>
+    </property>
+    <widget class="QTableWidget" name="MatA_tab_leWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>20</y>
+       <width>196</width>
+       <height>196</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>true</bool>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::NoDragDrop</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>5</number>
+     </property>
+     <property name="columnCount">
+      <number>10</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>27</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatB_groupBoxViev">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>200</width>
+      <height>218</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="title">
+     <string> Матрица В</string>
+    </property>
+    <widget class="QTableWidget" name="MatB_tab_leWidget">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>20</y>
+       <width>196</width>
+       <height>196</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="rowCount">
+      <number>4</number>
+     </property>
+     <property name="columnCount">
+      <number>4</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>27</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatC_groupBoxViev">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>10</y>
+      <width>200</width>
+      <height>218</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::DefaultContextMenu</enum>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="title">
+     <string notr="true"> Матрица С (Результат)</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QTableWidget" name="MatC_tab_leWidget">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>20</y>
+       <width>196</width>
+       <height>196</height>
+      </rect>
+     </property>
+     <property name="rowCount">
+      <number>4</number>
+     </property>
+     <property name="columnCount">
+      <number>4</number>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>27</number>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>20</number>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>16</number>
+     </attribute>
+     <row/>
+     <row/>
+     <row/>
+     <row/>
+     <column/>
+     <column/>
+     <column/>
+     <column/>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatA_groupBoxDey">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>201</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Действие с матрицей А</string>
+    </property>
+    <widget class="QPushButton" name="MatA_TransGlav">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>23</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по гл.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Obrat">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>23</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Обратная</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Vozvesti">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>47</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Возвести λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Umnoj_na_lam">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>71</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_PoChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>71</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть по Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_ProtChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>95</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть пр Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_VerhTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>119</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Верхний треуг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_NijnTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>143</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Нижний треуг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Diag">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>143</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Гл Диаг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_TransPoboch">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>47</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по пб.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Umnoj_iStr_na_i">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>95</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить i</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_Umnoj_jStl_na_j">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>119</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить j</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatA_groupBoxDan">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>235</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Данные матрицы А</string>
+    </property>
+    <widget class="QLineEdit" name="MatA_i_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatA_j_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatA_det_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>30</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_i_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>i</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_j_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>j</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_dat_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>det</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatA_sledGl">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_sledPb_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледПб</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatA_sledGl_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледГл</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatA_sledPb">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatB_groupBoxDan">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>235</y>
+      <width>200</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Данные матрицы B</string>
+    </property>
+    <widget class="QLineEdit" name="MatB_i_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatB_j_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatB_det_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_i_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>i</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_j_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>j</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_dat_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>det</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatB_sledGl">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_sledGl_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледГл</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_sledPb_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледПб</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatB_sledPb">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatB_groupBoxDey">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>201</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Действие с матрицей B</string>
+    </property>
+    <widget class="QPushButton" name="MatB_TransGlav">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>23</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по гл.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Obrat">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>23</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Обратная</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Vozvesti">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>47</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Возвести λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Umnoj_na_lam">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>71</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_PoChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>71</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть по Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_ProtChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>95</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть пр Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Diag">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>143</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Гл Диаг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_VerhTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>119</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Верхний треуг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_NijnTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>143</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Нижний треуг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Umnoj_iStr_na_i">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>94</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить i</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_Umnoj_jStl_na_j">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>119</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить j</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatB_TransPoboch">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>47</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по пб.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>MatB_ProtChas</zorder>
+    <zorder>MatB_TransGlav</zorder>
+    <zorder>MatB_Obrat</zorder>
+    <zorder>MatB_Vozvesti</zorder>
+    <zorder>MatB_Umnoj_na_lam</zorder>
+    <zorder>MatB_PoChas</zorder>
+    <zorder>MatB_Diag</zorder>
+    <zorder>MatB_VerhTreyg</zorder>
+    <zorder>MatB_NijnTreyg</zorder>
+    <zorder>MatB_Umnoj_iStr_na_i</zorder>
+    <zorder>MatB_Umnoj_jStl_na_j</zorder>
+    <zorder>MatB_TransPoboch</zorder>
+   </widget>
+   <widget class="QGroupBox" name="MatC_groupBoxDan">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>235</y>
+      <width>201</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Данные матрицы C</string>
+    </property>
+    <widget class="QLineEdit" name="MatC_i_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_dat_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>30</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>det</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatC_j_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>72</x>
+       <y>30</y>
+       <width>25</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatC_det_lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>30</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_i_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>i</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_j_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>97</x>
+       <y>30</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>j</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatC_sledGl">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_sledGl_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледГл</string>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_sledPb_pushButton">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>СледПб</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="MatC_sledPb">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>40</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="MatC_groupBoxDey">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>330</y>
+      <width>201</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Действие с матрицей C</string>
+    </property>
+    <widget class="QPushButton" name="MatC_TransGlav">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>23</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по гл.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Obrat">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>23</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Обратная</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Vozvesti">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>47</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Возвести λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Umnoj_na_lam">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>71</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить λ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_TransPoboch">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>47</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Трансп. по пб.</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_PoChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>71</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть по Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_ProtChas">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>95</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Повернуть пр Ч</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_VerhTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>119</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Верх.треуг</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Diag">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>143</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Гл Диаг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_NijnTreyg">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>143</y>
+       <width>108</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(193, 164, 255);</string>
+     </property>
+     <property name="text">
+      <string>Нижний треуг.</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Umnoj_iStr_na_i">
+     <property name="geometry">
+      <rect>
+       <x>118</x>
+       <y>95</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить i</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="MatC_Umnoj_jStl_na_j">
+     <property name="geometry">
+      <rect>
+       <x>117</x>
+       <y>119</y>
+       <width>80</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Умножить j</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="Deystviya_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>91</width>
+      <height>285</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string> Действие</string>
+    </property>
+    <widget class="QGroupBox" name="ABvC">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>70</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>A ? B</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QPushButton" name="Raznost_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>45</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Umnoj_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>67</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>*</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Summa_pushButton">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoRepeat">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="ABizAB_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>112</y>
+       <width>70</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>A &gt;&lt; B</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QPushButton" name="ABpomemyat">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;=&gt;</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="izBvA">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>67</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;==</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="izAvB">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>45</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>==&gt;</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="ABizC_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>205</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>A,B &gt;&lt; C</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QPushButton" name="izCvA">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>A&lt;=</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="izCvB">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>45</y>
+        <width>60</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>B&lt;=</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Autor">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>480</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Автор</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AboutQt">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>450</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Qt</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="Const_groupBox">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>330</y>
+      <width>91</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string> Константы</string>
+    </property>
+    <widget class="QGroupBox" name="lamda_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>18</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string> λ</string>
+     </property>
+     <widget class="QSpinBox" name="lamda_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>23000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="ij_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>68</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>i, j</string>
+     </property>
+     <widget class="QSpinBox" name="ij_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="minimum">
+       <number>-23000</number>
+      </property>
+      <property name="maximum">
+       <number>23000</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="start_groupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>117</y>
+       <width>70</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(193, 164, 255, 194)</string>
+     </property>
+     <property name="title">
+      <string>start</string>
+     </property>
+     <widget class="QSpinBox" name="start_spinBox">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>23</y>
+        <width>60</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="wrapping">
+       <bool>false</bool>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="showGroupSeparator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="minimum">
+       <number>-23000</number>
+      </property>
+      <property name="maximum">
+       <number>23000</number>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="AHelp">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>420</y>
+      <width>50</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Помощь</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AError">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>348</y>
+      <width>50</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightgreen;</string>
+    </property>
+    <property name="text">
+     <string>Ошибка</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ARavno">
+    <property name="geometry">
+     <rect>
+      <x>526</x>
+      <y>27</y>
+      <width>50</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>483</y>
+      <width>771</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>23</y>
+       <width>766</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>MatA_tab_leWidget</tabstop>
+  <tabstop>MatB_tab_leWidget</tabstop>
+  <tabstop>Summa_pushButton</tabstop>
+  <tabstop>Raznost_pushButton</tabstop>
+  <tabstop>Umnoj_pushButton</tabstop>
+  <tabstop>ABpomemyat</tabstop>
+  <tabstop>izAvB</tabstop>
+  <tabstop>izBvA</tabstop>
+  <tabstop>izCvA</tabstop>
+  <tabstop>izCvB</tabstop>
+  <tabstop>MatC_tab_leWidget</tabstop>
+  <tabstop>MatA_TransGlav</tabstop>
+  <tabstop>MatA_j_lineEdit</tabstop>
+  <tabstop>MatA_det_lineEdit</tabstop>
+  <tabstop>MatA_i_pushButton</tabstop>
+  <tabstop>MatA_j_pushButton</tabstop>
+  <tabstop>MatA_dat_pushButton</tabstop>
+  <tabstop>MatB_i_lineEdit</tabstop>
+  <tabstop>MatB_j_lineEdit</tabstop>
+  <tabstop>MatB_det_lineEdit</tabstop>
+  <tabstop>MatB_i_pushButton</tabstop>
+  <tabstop>MatB_j_pushButton</tabstop>
+  <tabstop>MatB_dat_pushButton</tabstop>
+  <tabstop>MatB_TransGlav</tabstop>
+  <tabstop>MatB_Diag</tabstop>
+  <tabstop>MatB_VerhTreyg</tabstop>
+  <tabstop>MatB_Obrat</tabstop>
+  <tabstop>MatB_ProtChas</tabstop>
+  <tabstop>MatB_PoChas</tabstop>
+  <tabstop>MatB_Vozvesti</tabstop>
+  <tabstop>MatB_Umnoj_na_lam</tabstop>
+  <tabstop>MatC_i_lineEdit</tabstop>
+  <tabstop>MatC_dat_pushButton</tabstop>
+  <tabstop>MatC_j_lineEdit</tabstop>
+  <tabstop>MatC_det_lineEdit</tabstop>
+  <tabstop>MatC_i_pushButton</tabstop>
+  <tabstop>MatC_j_pushButton</tabstop>
+  <tabstop>MatC_TransGlav</tabstop>
+  <tabstop>MatC_Diag</tabstop>
+  <tabstop>MatC_VerhTreyg</tabstop>
+  <tabstop>MatC_Obrat</tabstop>
+  <tabstop>MatC_ProtChas</tabstop>
+  <tabstop>MatC_PoChas</tabstop>
+  <tabstop>MatC_Vozvesti</tabstop>
+  <tabstop>MatC_Umnoj_na_lam</tabstop>
+  <tabstop>MatA_PoChas</tabstop>
+  <tabstop>MatA_Vozvesti</tabstop>
+  <tabstop>MatA_VerhTreyg</tabstop>
+  <tabstop>MatA_ProtChas</tabstop>
+  <tabstop>MatA_Obrat</tabstop>
+  <tabstop>MatA_Umnoj_na_lam</tabstop>
+  <tabstop>MatA_Diag</tabstop>
+  <tabstop>MatA_i_lineEdit</tabstop>
+  <tabstop>Autor</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
